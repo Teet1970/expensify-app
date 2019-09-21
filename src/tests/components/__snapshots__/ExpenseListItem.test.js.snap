@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseListItem correctly 1`] = `
+<div>
+  <NavLink
+    to={
+      Object {
+        "pathname": "/edit/1",
+      }
+    }
+  >
+    <h3>
+      Gum
+    </h3>
+  </NavLink>
+  <p>
+    195
+     - 
+    0
+  </p>
+</div>
+`;

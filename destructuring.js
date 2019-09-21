@@ -1,0 +1,1 @@
+consoleg.log('destruction');
