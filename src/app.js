@@ -12,16 +12,23 @@ import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
+const jsx = (
+  <Provider store = {store}>
+    <AppRouter />
+  </Provider>
+  );
 
-store.subscribe(() =>{
-    const state = store.getState();
-    const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
-    console.log(visibleExpenses);
-});
+  ReactDOM.render(jsx, document.getElementById('app'));
+  
+// store.subscribe(() =>{
+//     const state = store.getState();
+//     const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
+//     console.log(visibleExpenses);
+// });
 
-store.dispatch(addExpense({description:'Water bill', amount:100, createdAt: 1000}));
-store.dispatch(addExpense({description:'Gas bill', amount:300, createdAt:-1000}));
-store.dispatch(addExpense({description:'Heat bill', amount:1000, createdAt: 500}));
+// store.dispatch(addExpense({description:'Water bill', amount:100, createdAt: 1000}));
+// store.dispatch(addExpense({description:'Gas bill', amount:300, createdAt:-1000}));
+// store.dispatch(addExpense({description:'Heat bill', amount:1000, createdAt: 500}));
 //store.dispatch(setTextFilter('water'));
 //store.dispatch(setTextFilter('water'));
 
@@ -29,12 +36,7 @@ store.dispatch(addExpense({description:'Heat bill', amount:1000, createdAt: 500}
 //     store.dispatch(setTextFilter('bill'));
 // },3000)
 
-const jsx = (
-    <Provider store = {store}>
-      <AppRouter />
-    </Provider>
-    );
-ReactDOM.render(jsx, document.getElementById('app'));
+
 
 
 
