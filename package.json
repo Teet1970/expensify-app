@@ -26,14 +26,15 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
-    "css-loader": "0.28.4",   
+    "css-loader": "0.28.4",
     "express": "^4.17.1",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",    
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "js-yaml": "3.13.1",
     "mini-css-extract-plugin": "^0.8.0",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
     "raf": "3.3.2",
     "react": "16.8.0",
     "react-addons-shallow-compare": "15.6.0",
@@ -41,7 +42,7 @@
     "react-dom": "16.8.0",
     "react-modal": "^3.10.1",
     "react-redux": "^7.1.1",
-    "react-router-dom": "^5.0.1",    
+    "react-router-dom": "^5.0.1",
     "react-with-styles": "^4.0.0",
     "redux": "^4.0.4",
     "sass-loader": "^7.3.1",
@@ -50,15 +51,13 @@
     "validator": "^11.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
-    
   },
   "devDependencies": {
-    "jest": "20.0.4",
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "3.0.1",
+    "jest": "20.0.4",
     "react-test-renderer": "16.8.0",
     "webpack-dev-server": "^3.8.0"
-    
   }
 }
