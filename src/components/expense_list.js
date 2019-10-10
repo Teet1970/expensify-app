@@ -14,12 +14,9 @@ export const ExpenseList = (props) => (
         ) : (
             props.expenses.map((expense)=>{               
                 return <ExpenseListItem2 key = {expense.id}{...expense}/>
-            })
-            
-        ) 
-         
-      }      
-      
+            }) 
+        )         
+      }           
     </div>
 );
 

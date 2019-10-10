@@ -13,5 +13,5 @@ test('should correctly add up a single expense', () =>{
 
 test('should correctly add up multiple expenses value', () =>{
     const res = selectExpensesTotal(expenses);
-    expect(res).toBe(114195);
+    expect(res).toBe(24195);
 })

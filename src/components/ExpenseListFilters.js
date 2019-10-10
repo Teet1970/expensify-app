@@ -1,17 +1,15 @@
 import 'react-dates/initialize';
 import 'react-dates';
+import 'react-dates/lib/css/_datepicker.css';
 import React from 'react';
 import {connect} from 'react-redux';
 import {DateRangePicker} from 'react-dates';
 import {setTextFilter, sortByAmount, sortByDate, setStartDate, setEndDate} from '../actions/filters';
-import 'react-dates/lib/css/_datepicker.css';
-//import '!style-loader!css-loader!react-dates/lib/css/_datepicker.css'
 
 export class ExpenseListFilters extends React.Component {
     state = {
         calendarFocused: null,
     };
-
     onDatesChange = ({startDate,endDate}) => {
         this.props.setStartDate(startDate);
         this.props.setEndDate(endDate);
@@ -52,14 +50,15 @@ export class ExpenseListFilters extends React.Component {
         <DateRangePicker 
            startDate = {this.props.filters.startDate}
            endDate = {this.props.filters.endDate}
-           startDateId="START_DATE"
-           endDateId="END_DATE"
+           startDateId="Algusaeg"
+           endDateId="Loppaeg"
            onDatesChange = {this.onDatesChange}
            focusedInput = {this.state.calendarFocused}
            onFocusChange = {this.onFocusChange}     
            showClearDates={false}
            numberOfMonths = {1}
            isOutsideRange = {() => false}
+           displayFormat="M/D/YY"
         />
         </div>
       ) }
@@ -73,8 +72,8 @@ const mapDispatchToProps = (dispatch) => ({
     setTextFilter: (text) => dispatch(setTextFilter(text)),
     sortByDate: () => dispatch(sortByDate()),
     sortByAmount: () => dispatch(sortByAmount()),
-    setStartDate: () => dispatch(setStartDate(startDate)),
-    setEndDate: () => dispatch(setEndDate(endDate)),
+    setStartDate: (startDate) => dispatch(setStartDate(startDate)),
+    setEndDate: (endDate) => dispatch(setEndDate(endDate)),
     
 });
 

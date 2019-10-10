@@ -3,7 +3,7 @@ import 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import React from 'react';
 import moment from 'moment';
-import { SingleDatePicker, toLocalizedDateString } from 'react-dates';
+import { SingleDatePicker } from 'react-dates';
 
 
 //const now = moment();

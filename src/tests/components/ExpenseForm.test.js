@@ -1,4 +1,5 @@
-//import 'react-dates/initialize';
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
 import React from 'react';
 import {shallow} from 'enzyme';
 import moment from 'moment';
