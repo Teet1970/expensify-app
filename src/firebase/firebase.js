@@ -11,13 +11,7 @@
 
 
 const firebaseConfig = {
-  // apiKey: "AIzaSyAOlvv5GYcG2SYns05U13nY8AI5EuVFqhE",
-  // authDomain: "expensify-c30b5.firebaseapp.com",
-  // databaseURL: "https://expensify-c30b5.firebaseio.com",
-  // projectId: "expensify-c30b5",
-  // storageBucket: "expensify-c30b5.appspot.com",
-  // messagingSenderId: "912984739110",
-  // appId: "1:912984739110:web:03f3c3a071ddcf54e905e7"
+  
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
     //databaseURL: "https://expensify-c30b5.firebaseio.com",
